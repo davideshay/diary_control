@@ -1,0 +1,15 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Kubernetes Dashboard</title>
+</head>
+<body>
+  <h1>Kubernetes Control Panel</h1>
+  <button onclick="fetch('/restart-deployment').then(res => res.text()).then(alert)">Restart diaryapp</button>
+  <button onclick="fetch('/restore-orig').then(res => res.text()).then(alert)">Restore Original DB</button>
+  <button onclick="fetch('/backup').then(res => res.text()).then(alert)">Backup DB</button>
+  <button onclick="fetch('/restore-last').then(res => res.text()).then(alert)">Restore Last DB</button>
+</body>
+</html>
