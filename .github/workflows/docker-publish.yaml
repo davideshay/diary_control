@@ -16,6 +16,8 @@ on:
 jobs:
   build-it:
     runs-on: ubuntu-latest
+    permissions:
+       packages: write
     steps:
 #      - name: Get latest tag
 #        id: vars
