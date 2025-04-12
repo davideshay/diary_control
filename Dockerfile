@@ -27,7 +27,7 @@ COPY --from=builder /app/dist ./dist
 COPY package.json package-lock.json ./
 
 # Install only production dependencies
-RUN npm install --only=production
+RUN npm install --omit=dev
 
 # Expose the application port
 EXPOSE 3000
