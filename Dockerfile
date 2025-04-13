@@ -11,6 +11,7 @@ RUN npm install
 # Copy source files
 COPY tsconfig.json ./
 COPY src ./src
+COPY public ./public
 
 # Build the application
 RUN npm run build
