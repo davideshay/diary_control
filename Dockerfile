@@ -24,6 +24,7 @@ WORKDIR /app
 
 # Copy built files from the builder stage
 COPY --from=builder /app/dist ./dist
+COPY --from=builder /app/public ./public
 COPY package.json package-lock.json ./
 
 # Install only production dependencies
